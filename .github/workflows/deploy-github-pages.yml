@@ -1,7 +1,10 @@
 name: Deploy Github Pages
 
 # Déclenche l'action à chaque push sur la branche main
-on: workflow_dispatch
+on:
+  push:
+    branches:
+      - main
 
 permissions:
   pages: write
